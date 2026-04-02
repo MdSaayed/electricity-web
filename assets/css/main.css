@@ -6797,7 +6797,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 480px) {
   .rs-header-six .rs-header-logo img {
-    width: 150px;
+    width: 90px;
   }
 }
 .rs-header-six .rs-header-logo-wrapper {
@@ -7164,7 +7164,7 @@ html.lenis body {
 }
 @media only screen and (max-width: 480px) {
   .rs-header-eight .rs-header-logo img {
-    width: 150px;
+    width: 90px;
   }
 }
 .rs-header-eight .rs-header-right {
@@ -7709,7 +7709,7 @@ html.lenis body {
 /*  3.5.8 Header Common Style 
 /*----------------------------------------*/
 .rs-header-logo img {
-  max-width: 180px;
+  max-width: 90px;
 }
 .rs-header-search-wrapper {
   position: relative;
