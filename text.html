@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements Section Redesign</title>
+    <style>
+        :root {
+            --primary-color: #e65100;
+            --text-dark: #2d2d2d;
+            --text-light: #666;
+            --bg-gray: #f9f9f9;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 50px;
+            gap: 40px;
+        }
+
+        .header-title-wrap {
+            flex: 1;
+        }
+
+        .label {
+            color: var(--primary-color);
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: var(--text-dark);
+            margin: 0;
+            line-height: 1.2;
+        }
+
+        .header-desc {
+            flex: 1;
+            color: var(--text-light);
+            font-size: 16px;
+            line-height: 1.6;
+            margin-top: 30px;
+        }
+
+        /* Grid Layout */
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Card Styling */
+        .card {
+            background: #fff;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Standardized Icon Container */
+        .icon-box {
+            width: 64px;
+            height: 64px;
+            background-color: var(--bg-gray);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            color: var(--primary-color);
+        }
+
+        .icon-box svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: var(--text-dark);
+            margin: 0 0 15px 0;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .header-section {
+                flex-direction: column;
+                gap: 15px;
+            }
+            h2 { font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-section">
+        <div class="header-title-wrap">
+            <span class="label">Achievements</span>
+            <h2>Certifications, approvals and milestones</h2>
+        </div>
+        <p class="header-desc">
+            Golden International Est. LLC has built a strong approvals and registration profile with major utilities, defence and telecom organizations in Sultanate of Oman.
+        </p>
+    </div>
+
+    <div class="achievements-grid">
+        <div class="card">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>JSRS Certified Supplier</h3>
+            <p>Recognized under Oman's Joint Supplier Registration System and trusted by utilities and institutions for reliable electrical product supply.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M8 10h.01"/><path d="M16 10h.01"/><path d="M8 14h.01"/><path d="M16 14h.01"/></svg>
+            </div>
+            <h3>Major Registrations</h3>
+            <p>Registered with DCRP, PDO, OETC and JSRS while supporting institutional buyers like NAMA, PDO and MOD across Oman.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3>Approvals Portfolio</h3>
+            <p>Our portfolio includes DCRP, NAMA, MOD, PDO, Ooredoo, RCA, OETC, Oman Broadband and other leading stakeholders.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

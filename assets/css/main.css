@@ -282,9 +282,6 @@ i[class^=icon-] {
     max-width: 1390px;
   }
 }
-.row {
-  --bs-gutter-x: 3rem;
-}
 
 .g-0,
 .gx-0 {
