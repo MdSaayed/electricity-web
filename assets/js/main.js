@@ -1034,7 +1034,7 @@ Sidebar Toggle
   });
 
   // Contact Form Activation
-  var form = $("#contact-form");
+  var form = $(".contact.html-form");
   var formMessages = $("#form-messages");
   $(form).submit(function (e) {
     if ($(form).attr("data-local-enquiry") === "true") {
@@ -1071,3 +1071,166 @@ Sidebar Toggle
       });
   });
 })(jQuery);
+
+
+//======================================== SLide Code ========================================
+const swiperElement = document.querySelector('.gie-clients-slider');
+
+const speed = parseInt(swiperElement.dataset.speed) || 3000;
+const items = parseInt(swiperElement.dataset.item) || 6;
+
+const swiper = new Swiper('.gie-clients-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  speed: speed,
+  allowTouchMove: true,
+  grabCursor: true,
+
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  freeMode: true,
+  momentum: false,
+
+  breakpoints: {
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    992: { slidesPerView: 4 },
+    1400: { slidesPerView: items }
+  }
+});
+
+
+const approvalSwiper = new Swiper('.gie-approvals-slider', {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: true,
+  speed: 4000,
+  allowTouchMove: true,
+  grabCursor: true,
+  freeMode: true,
+
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+
+  breakpoints: {
+    576: { slidesPerView: 2 },
+    768: { slidesPerView: 3 },
+    992: { slidesPerView: 4 },
+    1200: { slidesPerView: 5 },
+    1400: { slidesPerView: 6 }
+  }
+});
+
+
+// ======================================== Product Details =====================================
+
+
+// ======================================== Update Code ========================================
+(function () {
+  var selectedProduct = "";
+  var productSelect = document.getElementById("product-select");
+  var subjectInput = document.getElementById("subject");
+  var messageInput = document.getElementById("message");
+  var form = document.getElementById("contact-form");
+  var formMessages = document.getElementById("form-messages");
+
+  function syncButtons() {
+    document
+      .querySelectorAll(".gie-add-product")
+      .forEach(function (button) {
+        var product = button.getAttribute("data-product");
+        var isAdded = selectedProduct === product;
+        button.classList.toggle("is-added", isAdded);
+        button.textContent = isAdded
+          ? "Selected for Enquiry"
+          : "Get a quote";
+      });
+  }
+
+  document.addEventListener("click", function (event) {
+    var addButton = event.target.closest(".gie-add-product");
+
+    if (addButton) {
+      selectedProduct = addButton.getAttribute("data-product");
+      if (productSelect) {
+        productSelect.value = selectedProduct;
+      }
+      if (subjectInput && !subjectInput.value.trim()) {
+        subjectInput.value = "Product enquiry";
+      }
+      if (messageInput && !messageInput.value.trim()) {
+        messageInput.value =
+          "I am interested in this product category. Please share details, availability and quotation.";
+      }
+      syncButtons();
+      window.location.hash = "contact";
+    }
+  });
+
+  if (productSelect) {
+    productSelect.addEventListener("change", function () {
+      selectedProduct = productSelect.value;
+      syncButtons();
+    });
+  }
+
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      if (form.getAttribute("data-local-enquiry") !== "true") {
+        return;
+      }
+
+      event.preventDefault();
+
+      var name = document.getElementById("name").value.trim();
+      var email = document.getElementById("email").value.trim();
+      var company = document.getElementById("company").value.trim();
+      var phone = document.getElementById("phone").value.trim();
+      var product = productSelect ? productSelect.value.trim() : "";
+      var subject = document.getElementById("subject").value.trim();
+      var message = document.getElementById("message").value.trim();
+
+      if (!name || !email || !product || !subject || !message) {
+        formMessages.className = "gie-form-alert error";
+        formMessages.textContent =
+          "Please fill in the required enquiry details before submitting.";
+        return;
+      }
+
+      var body = [
+        "Name: " + name,
+        "Company: " + (company || "Not provided"),
+        "Email: " + email,
+        "Phone: " + (phone || "Not provided"),
+        "Product Category: " + product,
+        "",
+        "Message:",
+        message,
+      ].join("\n");
+
+      formMessages.className = "gie-form-alert success";
+      formMessages.textContent =
+        "Enquiry prepared successfully with your selected product category.";
+
+      window.location.href =
+        "mailto:giemktg@gioman.com?subject=" +
+        encodeURIComponent(subject) +
+        "&body=" +
+        encodeURIComponent(body);
+
+      form.reset();
+      selectedProduct = "";
+      syncButtons();
+    });
+  }
+
+  syncButtons();
+})();

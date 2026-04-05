@@ -10,7 +10,7 @@
     content="Golden International Est. LLC supplies electrical products for power generation, transmission, and distribution sectors in Oman." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Place favicon.ico in the root directory -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/gie/gie-logo.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/logo.png" />
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/vendor/animate.min.css" />
@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="assets/css/vendor/spacing.css" />
   <link rel="stylesheet" href="assets/css/vendor/remixicon.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/modify.css" />
   <style>
     .rs-counter-area,
     .rs-counter-item,
@@ -212,22 +213,8 @@
 
     .gie-logo-card {
       height: 100%;
-      background: #fff;
-      border-radius: 24px;
-      padding: 22px;
-      box-shadow: 0 14px 36px rgba(17, 17, 17, 0.08);
-    }
-
-    .gie-logo-thumb,
-    .gie-approval-thumb,
-    .rs-brand-thumb {
-      height: 140px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-      background: #fff;
-      border-radius: 18px;
+      background: var(--rs-bg-primary);
+      padding: 20px;
     }
 
     .gie-approval-thumb {
@@ -246,7 +233,15 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
-      background: #fff;
+    }
+
+    .rs-brand-thumb {
+      width: 100%;
+      padding: 20px
+    }
+
+    .rs-brand-thumb img {
+      width: 100% !important;
     }
 
     .gie-logo-card .rs-blog-content {
@@ -518,6 +513,10 @@
       z-index: 3;
     }
 
+    .has-clip-path {
+      clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 0% 100%);
+    }
+
     @media (max-width: 767px) {
       .gie-about-showcase {
         min-height: auto;
@@ -610,7 +609,7 @@
     <div id="loader" class="loader">
       <div class="loader-container">
         <div class="loader-icon">
-          <img src="assets/images/gie/gie-logo.png" alt="Golden International Est. LLC" />
+          <img src="assets/images/logo/logo.png" alt="Golden International Est. LLC" />
         </div>
       </div>
     </div>
@@ -631,7 +630,7 @@
           <div class="rs-header-left">
             <div class="rs-header-logo-wrapper">
               <div class="rs-header-logo">
-                <a class="rs-logo-link" href="index.html"><img src="assets/images/gie/gie-logo.png"
+                <a class="rs-logo-link" href="index.html"><img src="assets/images/logo/logo.png"
                     alt="Golden International Est. LLC" /></a>
               </div>
             </div>
@@ -645,12 +644,12 @@
             </div>
             <nav id="mobile-menu" class="main-menu">
               <ul class="multipage-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#dealers">Dealers &amp; Partners</a></li>
                 <li><a href="#clients">Clients</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -672,7 +671,7 @@
             </div>
             <!-- search area end -->
             <div class="rs-header-btn">
-              <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Get a Quote
+              <a class="rs-btn has-theme-orange has-icon has-bg" href="./contact.html">Get a Quote
                 <span class="icon-box">
                   <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <path
@@ -708,7 +707,7 @@
           <div class="rs-header-left">
             <div class="rs-header-logo-wrapper">
               <div class="rs-header-logo">
-                <a class="rs-logo-link" href="index.html"><img src="assets/images/gie/gie-logo.png"
+                <a class="rs-logo-link" href="index.html"><img src="assets/images/logo/logo.png"
                     alt="Golden International Est. LLC" /></a>
               </div>
             </div>
@@ -722,12 +721,12 @@
             </div>
             <nav id="mobile-menu-two" class="main-menu">
               <ul class="multipage-menu">
-                <li><a href="#home">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#dealers">Dealers &amp; Partners</a></li>
                 <li><a href="#clients">Clients</a></li>
-                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
               </ul>
             </nav>
           </div>
@@ -749,7 +748,7 @@
             </div>
             <!-- search area end -->
             <div class="rs-header-btn">
-              <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Get a Quote
+              <a class="rs-btn has-theme-orange has-icon has-bg" href="./contact.html">Get a Quote
                 <span class="icon-box">
                   <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <path
@@ -789,7 +788,7 @@
         <div class="offcanvas-content">
           <div class="offcanvas-top d-flex justify-content-between align-items-center mb-20">
             <div class="offcanvas-logo">
-              <a class="logo-black" href="index.html"><img src="assets/images/gie/gie-logo.png"
+              <a class="logo-black" href="index.html"><img src="assets/images/logo/logo.png"
                   alt="Golden International Est. LLC" /></a>
             </div>
             <div class="offcanvas-close">
@@ -927,31 +926,6 @@
   <main>
     <!-- banner area start -->
     <section id="home" class="rs-banner-area rs-banner-one p-relative rs-swiper">
-      <div class="rs-banner-shape">
-        <img src="assets/images/shape/half-arrow.png" alt="image" />
-      </div>
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-xl-2">
-            <div class="rs-banner-meta-wrapper">
-              <div class="rs-banner-contact-item">
-                <span>Email.</span>
-                <h6>
-                  <a href="mailto:giemktg@gioman.com">giemktg@gioman.com</a>
-                </h6>
-              </div>
-              <div class="rs-banner-contact-item">
-                <span>Call.</span>
-                <h6><a href="tel:+96824594493">+968 2459 4493</a></h6>
-              </div>
-              <div class="rs-banner-contact-item">
-                <span>Fax.</span>
-                <h6><a href="#contact">Available on request</a></h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="rs-banner-slider-wrapper">
         <div class="swiper" data-clone-slides="false" data-loop="true" data-speed="2000" data-autoplay="true"
           data-dots-dynamic="false" data-hover-pause="true" data-effect="fade" data-delay="1000" data-item="1"
@@ -1026,7 +1000,7 @@
                           </div>
                           <div class="rs-banner-info-btn">
                             <div class="rs-banner-btn">
-                              <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Contact Us
+                              <a class="rs-btn has-theme-orange has-icon has-bg" href="./contact.html">Contact Us
                                 <span class="icon-box">
                                   <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                     <path
@@ -1169,7 +1143,7 @@
                 </p>
               </div>
               <div class="rs-about-btn">
-                <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Request Enquiry
+                <a class="rs-btn has-theme-orange has-icon has-bg" href="./contact.html">Read More
                   <span class="icon-box">
                     <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                       <path
@@ -1187,12 +1161,45 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="rs-about-thumb wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-              <div class="gie-about-showcase">
-                <img class="gie-about-showcase-main" src="assets/images/gie/power-repair.jpg"
-                  alt="Golden International electrical supply and infrastructure support" />
+
+        <div class="rs-work-step-wrapper mt-50">
+          <div class="row g-5 process-counts">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                <h5 class="rs-work-step-title">Our Mission</h5>
+                <div class="rs-work-step-descrip">
+                  <p>
+                    To become the most trusted partner for supply of
+                    electrical products for transmission and distribution
+                    networks in Sultanate of Oman, providing highest quality,
+                    reliability and cost-effective products and solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
+                <h5 class="rs-work-step-title">Our Vision</h5>
+                <div class="rs-work-step-descrip">
+                  <p>
+                    To become the best and most reliable source of highest
+                    quality electrical products, supporting utilities,
+                    contractors and institutions with trustable, reliable and
+                    cost-effective solutions.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
+                <h5 class="rs-work-step-title">Our Values</h5>
+                <div class="rs-work-step-descrip">
+                  <p>
+                    To uphold excellence through accountability and passion, ensuring ethical conduct and social
+                    responsibility while delivering safety and reliability to every customer through our commitment to
+                    integrity.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -1200,59 +1207,6 @@
       </div>
     </section>
     <!-- about area end -->
-
-    <!-- counter area start -->
-    <div class="rs-counter-area rs-counter-one section-space-bottom">
-      <div class="container">
-        <div class="row g-5 gie-counter-grid">
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-            <div class="rs-counter-item gie-counter-card">
-              <div class="rs-counter-inner">
-                <div class="rs-counter-number-wrapper">
-                  <span class="rs-counter-number odometer" data-count="45">00</span>
-                  <span class="prefix">+</span>
-                </div>
-                <span class="rs-counter-title">Years of Experience</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-            <div class="rs-counter-item gie-counter-card">
-              <div class="rs-counter-inner">
-                <div class="rs-counter-number-wrapper">
-                  <span class="rs-counter-number odometer" data-count="15">00</span>
-                  <span class="prefix">+</span>
-                </div>
-                <span class="rs-counter-title">Major Product Groups</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-            <div class="rs-counter-item gie-counter-card">
-              <div class="rs-counter-inner">
-                <div class="rs-counter-number-wrapper">
-                  <span class="rs-counter-number odometer" data-count="400">00</span>
-                  <span class="prefix">kV</span>
-                </div>
-                <span class="rs-counter-title">Voltage Capability</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
-            <div class="rs-counter-item gie-counter-card">
-              <div class="rs-counter-inner">
-                <div class="rs-counter-number-wrapper">
-                  <span class="rs-counter-number odometer" data-count="4">00</span>
-                  <span class="prefix">+</span>
-                </div>
-                <span class="rs-counter-title">Key Registrations &amp; Approvals</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- counter area end -->
 
     <!-- services area start -->
     <section id="products" class="rs-services-area section-space rs-services-one primary-bg p-relative">
@@ -1279,7 +1233,7 @@
           </div>
           <div class="col-xl-5 col-lg-5">
             <div class="rs-services-btn">
-              <a class="rs-btn has-bg-transparent has-icon has-bg" href="#contact">Send Enquiry
+              <a class="rs-btn has-bg-transparent has-icon has-bg" href="./contact.html">Send Enquiry
                 <span class="icon-box">
                   <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <path
@@ -1407,7 +1361,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1453,7 +1407,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1499,7 +1453,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1546,7 +1500,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1593,7 +1547,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1639,7 +1593,7 @@
                             </ul>
                           </div>
                           <div class="rs-services-tab-btn">
-                            <a class="rs-btn has-text has-icon" href="#contact">Enquire Now
+                            <a class="rs-btn has-text has-icon" href="./contact.html">Enquire Now
                               <span class="icon-box">
                                 <svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                                   <path
@@ -1666,73 +1620,6 @@
       </div>
     </section>
     <!-- services area end -->
-
-    <!-- work step area start -->
-    <section class="rs-work-step-area rs-work-step-one section-space">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="rs-section-title-wrapper">
-              <span class="rs-section-subtitle has-theme-orange justify-content-start">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="15" viewBox="0 0 11 15" fill="none">
-                  <path d="M3.14286 10L0 15L8.78104e-07 0L3.14286 5V10Z" fill="#EA5501"></path>
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6.28571 10L3.14286 15L3.14286 10L4.71428 7.5L3.14286 5L3.14286 0L6.28571 5L6.28571 10ZM6.28571 10L7.85714 7.5L6.28571 5V0L11 7.5L6.28571 15V10Z"
-                    fill="#EA5501"></path>
-                </svg>
-                Mission & Vision
-              </span>
-              <h2 class="rs-work-step-section-title">
-                Mission, Vision & Values
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="rs-work-step-wrapper">
-          <div class="row g-5 process-counts">
-            <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-                <h5 class="rs-work-step-title">Our Mission</h5>
-                <div class="rs-work-step-descrip">
-                  <p>
-                    To become the most trusted partner for supply of
-                    electrical products for transmission and distribution
-                    networks in Sultanate of Oman, providing highest quality,
-                    reliability and cost-effective products and solutions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
-                <h5 class="rs-work-step-title">Our Vision</h5>
-                <div class="rs-work-step-descrip">
-                  <p>
-                    To become the best and most reliable source of highest
-                    quality electrical products, supporting utilities,
-                    contractors and institutions with trustable, reliable and
-                    cost-effective solutions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-              <div class="rs-work-step-item wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
-                <h5 class="rs-work-step-title">Our Values</h5>
-                <div class="rs-work-step-descrip">
-                  <p>
-                    To uphold excellence through accountability and passion, ensuring ethical conduct and social
-                    responsibility while delivering safety and reliability to every customer through our commitment to
-                    integrity.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- work step area end -->
 
     <!-- achievements area start -->
     <section class="rs-feature-area section-space-bottom gie-achievements-section">
@@ -1810,234 +1697,6 @@
     </section>
     <!-- achievements area end -->
 
-    <!-- portfolio area start -->
-    <section class="rs-portfolio-area section-space rs-portfolio-one">
-      <div class="container">
-        <div class="row g-5 section-title-space align-items-end">
-          <div class="col-xxl-7 col-xl-8 col-lg-8">
-            <div class="rs-section-title-wrapper">
-              <span class="rs-section-subtitle has-theme-orange justify-content-start">Major product lines</span>
-              <h2 class="rs-section-title">
-                Electrical products we supply across Oman
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row g-5">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/wooden-poles.jpg" alt="Wooden poles" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">Wooden Poles</h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Premium quality wooden poles for overhead line
-                    construction.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Wooden Poles">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/insulators.jpg" alt="Insulators and overhead line hardware" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">
-                  Insulator Strings, OHL Hardware, Cross Arms
-                </h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Silicon rubber insulators, cross arms and overhead line
-                    hardware up to 400kV.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button"
-                    data-product="Insulator Strings, OHL Hardware, Cross Arms">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/cables.jpg" alt="Cables and conductors" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">Cables and Conductors</h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Power cables, control cables, LSZH cables and bare
-                    conductors.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Cables and Conductors">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/transformers.jpg" alt="Transformers and ring main units" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">
-                  Transformers, RMU, OLU, Feeder Pillars
-                </h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Distribution transformers, ring main units and feeder
-                    pillars.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Transformers, RMU, OLU, Feeder Pillars">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/cable-trays.jpg" alt="Cable cleats and cable support systems" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">
-                  Cable Cleats and Cable Clamps
-                </h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Practical cable support products for secure installation
-                    requirements.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Cable Cleats and Cable Clamps">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/cable-lugs.jpg" alt="Cable lugs connectors and glands" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">
-                  Cable Lugs, Connectors, Glands
-                </h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Bimetallic lugs, cable glands, connectors and accessories.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Cable Lugs, Connectors, Glands">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/safety-equipment.jpg"
-                  alt="Termination kits and safety equipment" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">Termination Kits</h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Termination and straight through jointing accessories for
-                    dependable connections.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Termination Kits">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-product-card">
-              <div class="gie-product-card-thumb">
-                <img src="assets/images/gie/products/earthing.jpg" alt="Earthing and lightning protection" />
-              </div>
-              <div class="gie-product-card-content">
-                <h5 class="rs-feature-title">
-                  Earthing and Lightning Protection
-                </h5>
-                <div class="rs-feature-descrip">
-                  <p>
-                    Marconite, bentonite, salts, arrestors and protection
-                    materials.
-                  </p>
-                </div>
-                <div class="gie-product-actions">
-                  <button class="gie-add-product" type="button" data-product="Earthing and Lightning Protection">
-                    Add to Enquiry
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row g-5 section-title-space gie-product-summary-row">
-          <div class="col-xl-6 col-lg-6">
-            <div class="gie-list-card">
-              <h4 class="rs-feature-title">Extended Product Range</h4>
-              <ul>
-                <li>Fiber glass stay insulators</li>
-                <li>
-                  Dead end guy grip, pole top make off and distribution ties
-                </li>
-                <li>Cable tiles, caution tapes and warning boards</li>
-                <li>Stay wires and guard wires</li>
-                <li>FRP cable trays, channels, trunking and ladders</li>
-                <li>Silicon rubber insulators up to 400kV</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="gie-list-card">
-              <h4 class="rs-feature-title">Safety &amp; Protection Range</h4>
-              <ul>
-                <li>Voltage detectors, earthing kits, CME and AE products</li>
-                <li>Operating rods, rescue kits and insulating mats</li>
-                <li>Lighting arrestors 11kV and 33kV</li>
-                <li>Marconite, bentonite, salt and charcoal</li>
-                <li>Conductors, control cables and power cables</li>
-                <li>Termination kits and straight through joints</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- portfolio area end -->
-
     <!-- brand area start -->
     <section id="dealers" class="rs-brand-area rs-brand-one section-space primary-bg rs-swiper">
       <div class="container">
@@ -2077,14 +1736,14 @@
                   <div class="swiper-slide">
                     <div class="rs-brand-item has-clip-path">
                       <div class="rs-brand-thumb">
-                        <img src="assets/images/gie/logos/partners/ellis-patents.jpg" alt="Ellis Patents" />
+                        <img src="assets/images/gie/logos/partners/ellis-patents.png" alt="Ellis Patents" />
                       </div>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="rs-brand-item has-clip-path">
                       <div class="rs-brand-thumb">
-                        <img src="assets/images/gie/logos/partners/anandsons.jpg" alt="Anandsons Overseas Trading" />
+                        <img src="assets/images/gie/logos/partners/anandsons.png" alt="Anandsons Overseas Trading" />
                       </div>
                     </div>
                   </div>
@@ -2105,7 +1764,7 @@
                   <div class="swiper-slide">
                     <div class="rs-brand-item has-clip-path">
                       <div class="rs-brand-thumb">
-                        <img src="assets/images/gie/logos/partners/kse.jpg" alt="KSE Electricals Pvt. Ltd" />
+                        <img src="assets/images/gie/logos/partners/kse.png" alt="KSE Electricals Pvt. Ltd" />
                       </div>
                     </div>
                   </div>
@@ -2148,111 +1807,217 @@
     </section>
     <!-- brand area end -->
 
-    <!-- testimonial area start -->
-    <section class="rs-testimonial-area section-space rs-testimonial-one primary-bg rs-swiper">
+    <!-- portfolio area start -->
+    <section class="rs-portfolio-area section-space rs-portfolio-one">
       <div class="container">
-        <div class="row g-5 section-title-space align-items-center">
-          <div class="col-xl-7 col-lg-7">
+        <div class="row g-5 section-title-space align-items-end">
+          <div class="col-xxl-7 col-xl-8 col-lg-8">
             <div class="rs-section-title-wrapper">
-              <span class="rs-section-subtitle has-theme-orange justify-content-start">Leadership</span>
-              <h2 class="rs-section-title rs-split-text-enable split-in-fade">
-                Messages from our leadership
+              <span class="rs-section-subtitle has-theme-orange justify-content-start">Major product lines</span>
+              <h2 class="rs-section-title">
+                Electrical products we supply across Oman
               </h2>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5">
-            <div class="rs-testimonial-btn">
-              <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Contact Us<span class="icon-box"><svg
-                    class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                    <path
-                      d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                    </path>
-                  </svg><svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-                    <path
-                      d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
-                    </path>
-                  </svg></span></a>
             </div>
           </div>
         </div>
         <div class="row g-5">
-          <div class="col-xl-4 col-lg-6">
-            <div class="rs-testimonial-item has-clip-path">
-              <div class="rs-testimonial-content">
-                <div class="rs-testimonial-top">
-                  <div class="rs-testimonial-avater-info">
-                    <h6 class="rs-testimonial-avater-title">
-                      Ali K Al Shaihani
-                    </h6>
-                    <span class="rs-testimonial-avater-designation">Chairman</span>
-                  </div>
-                </div>
-                <div class="rs-testimonial-description">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/wooden-poles.jpg" alt="Wooden poles" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">Wooden Poles</h5>
+                <div class="rs-feature-descrip">
                   <p>
-                    "Welcome to Golden International Est. LLC, a reliable name
-                    in marketing of electrical products for power generation,
-                    transmission and distribution sectors. With more than 45
-                    years of experience and a passion for excellence, we have
-                    established ourselves as one of the leading organizations
-                    that support Oman&apos;s power transmission and
-                    distribution infrastructure and growth. Our commitment to
-                    quality, safety and reliability has earned us the trust of
-                    major utilities, contractors and institutions across the
-                    country."
+                    Premium quality wooden poles for overhead line
+                    construction.
                   </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Wooden Poles">
+                    Get a quote
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6">
-            <div class="rs-testimonial-item has-clip-path">
-              <div class="rs-testimonial-content">
-                <div class="rs-testimonial-top">
-                  <div class="rs-testimonial-avater-info">
-                    <h6 class="rs-testimonial-avater-title">Arun K. Johar</h6>
-                    <span class="rs-testimonial-avater-designation">Managing Director / Partner</span>
-                  </div>
-                </div>
-                <div class="rs-testimonial-description">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/insulators.jpg" alt="Insulators and overhead line hardware" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">
+                  Insulator Strings, OHL Hardware, Cross Arms
+                </h5>
+                <div class="rs-feature-descrip">
                   <p>
-                    "Welcome to Golden International EST. LLC, a name that
-                    grew with Sultanate of Oman over the last 45+ years. A
-                    passion that took birth in 1980, built on quality,
-                    integrity and accountability, to become a synonym for
-                    trust by supporting major utilities, contractors and
-                    institutions in prestigious overhead line electrical
-                    projects in Sultanate of Oman."
+                    Silicon rubber insulators, cross arms and overhead line
+                    hardware up to 400kV.
                   </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button"
+                    data-product="Insulator Strings, OHL Hardware, Cross Arms">
+                    Get a quote
+                  </button>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-4 col-lg-6">
-            <div class="rs-testimonial-item has-clip-path">
-              <div class="rs-testimonial-content">
-                <div class="rs-testimonial-top">
-                  <div class="rs-testimonial-avater-info">
-                    <h6 class="rs-testimonial-avater-title">
-                      Sister Company
-                    </h6>
-                    <span class="rs-testimonial-avater-designation">Golden International Plastic Factory LLC</span>
-                  </div>
-                </div>
-                <div class="rs-testimonial-description">
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/cables.jpg" alt="Cables and conductors" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">Cables and Conductors</h5>
+                <div class="rs-feature-descrip">
                   <p>
-                    Golden International Plastic Factory LLC, situated in
-                    Sohar Industrial Area, is a 100% Omani factory producing
-                    underground utility protection products like cable tiles,
-                    warning tape and warning boards.
+                    Power cables, control cables, LSZH cables and bare
+                    conductors.
                   </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Cables and Conductors">
+                    Get a quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/transformers.jpg" alt="Transformers and ring main units" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">
+                  Transformers, RMU, OLU, Feeder Pillars
+                </h5>
+                <div class="rs-feature-descrip">
+                  <p>
+                    Distribution transformers, ring main units and feeder
+                    pillars.
+                  </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Transformers, RMU, OLU, Feeder Pillars">
+                    Get a quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/cable-trays.jpg" alt="Cable cleats and cable support systems" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">
+                  Cable Cleats and Cable Clamps
+                </h5>
+                <div class="rs-feature-descrip">
+                  <p>
+                    Practical cable support products for secure installation
+                    requirements.
+                  </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Cable Cleats and Cable Clamps">
+                    Get a quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/cable-lugs.jpg" alt="Cable lugs connectors and glands" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">
+                  Cable Lugs, Connectors, Glands
+                </h5>
+                <div class="rs-feature-descrip">
+                  <p>
+                    Bimetallic lugs, cable glands, connectors and accessories.
+                  </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Cable Lugs, Connectors, Glands">
+                    Get a quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/safety-equipment.jpg"
+                  alt="Termination kits and safety equipment" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">Termination Kits</h5>
+                <div class="rs-feature-descrip">
+                  <p>
+                    Termination and straight through jointing accessories for
+                    dependable connections.
+                  </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Termination Kits">
+                    Get a quote
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="gie-product-card">
+              <div class="gie-product-card-thumb">
+                <img src="assets/images/gie/products/earthing.jpg" alt="Earthing and lightning protection" />
+              </div>
+              <div class="gie-product-card-content">
+                <h5 class="rs-feature-title">
+                  Earthing and Lightning Protection
+                </h5>
+                <div class="rs-feature-descrip">
+                  <p>
+                    Marconite, bentonite, salts, arrestors and protection
+                    materials.
+                  </p>
+                </div>
+                <div class="gie-product-actions">
+                  <button class="gie-add-product" type="button" data-product="Earthing and Lightning Protection">
+                    Get a quote
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row mt-40 align-items-center justify-content-center">
+          <div class="rs-products-btn text-center">
+            <a class="rs-btn has-theme-orange has-icon has-bg" href="/products">View All Products<span
+                class="icon-box"><svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path
+                    d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
+                  </path>
+                </svg><svg class="icon-second" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path
+                    d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
+                  </path>
+                </svg></span></a>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- testimonial area start -->
+    <!-- portfolio area end -->
 
     <!-- clients area start -->
     <section id="clients" class="rs-blog-area section-space rs-blog-one gie-clients-section">
@@ -2268,8 +2033,8 @@
           </div>
           <div class="col-xl-5 col-lg-5">
             <div class="rs-blog-btn">
-              <a class="rs-btn has-theme-orange has-icon has-bg" href="#contact">Submit Enquiry<span
-                  class="icon-box"><svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+              <a class="rs-btn has-theme-orange has-icon has-bg" href="./contact.html">View All<span class="icon-box"><svg
+                    class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                     <path
                       d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
                     </path>
@@ -2281,164 +2046,87 @@
             </div>
           </div>
         </div>
-        <div class="row g-5 gie-clients-grid">
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/nama.jpg" alt="NAMA Group" />
+
+        <div class="swiper gie-clients-slider">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/nama.png" alt="NAMA Group" />
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">NAMA Group</h5>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/pdo.png" alt="PDO" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/galfar.png" alt="Galfar Engineering" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/uep.png" alt="United Engineering Projects" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/towell-engineering.png" alt="Towell Engineering" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/arabian-industries.png" alt="Arabian Industries" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/sts-group.png" alt="STS Group" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/al-tasnim.png" alt="Al Tasnim" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/eastern-overseas.png" alt="Eastern Overseas" />
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="gie-logo-card has-clip-path">
+                <div class="gie-logo-thumb">
+                  <img src="assets/images/gie/logos/clients/ebalco.png" alt="EBALCO" />
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/pdo.jpg" alt="PDO" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">PDO</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/galfar.jpg" alt="Galfar Engineering" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">Galfar Engineering</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/uep.jpg" alt="United Engineering Projects" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">
-                  United Engineering Projects
-                </h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/towell-engineering.jpg" alt="Towell Engineering" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">Towell Engineering</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/arabian-industries.jpg" alt="Arabian Industries" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">Arabian Industries</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/sts-group.jpg" alt="STS Group" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">STS Group</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/al-tasnim.jpg" alt="Al Tasnim" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">Al Tasnim</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/eastern-overseas.jpg" alt="Eastern Overseas" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">Eastern Overseas</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-logo-thumb">
-                <img src="assets/images/gie/logos/clients/ebalco.jpg" alt="EBALCO" />
-              </div>
-              <div class="rs-blog-content">
-                <h5 class="rs-blog-title has-black">EBALCO</h5>
-              </div>
-            </div>
-          </div>
+
+          <div class="swiper-pagination"></div>
         </div>
       </div>
     </section>
     <!-- clients area end -->
-
-    <!-- gallery area start -->
-    <section class="rs-gallery-area section-space primary-bg">
-      <div class="container">
-        <div class="row g-5 section-title-space align-items-center">
-          <div class="col-xl-7 col-lg-7">
-            <div class="rs-section-title-wrapper">
-              <span class="rs-section-subtitle has-theme-orange justify-content-start">Image Gallery</span>
-              <h2 class="rs-section-title rs-split-text-enable split-in-fade">
-                Office, project and operational visuals
-              </h2>
-            </div>
-          </div>
-          <div class="col-xl-5 col-lg-5">
-            <p class="descrip mb-0">
-              A curated gallery area is included for office, meeting and
-              product visuals, aligned with the structure requested in the
-              webpage draft.
-            </p>
-          </div>
-        </div>
-        <div class="row g-4 g-lg-5">
-          <div class="col-xl-4 col-lg-6">
-            <a class="gie-gallery-card popup-image" href="assets/images/gallery/gallery-thumb-01.png">
-              <img src="assets/images/gallery/gallery-thumb-01.png" alt="Golden International gallery image 1" />
-            </a>
-          </div>
-          <div class="col-xl-4 col-lg-6">
-            <a class="gie-gallery-card popup-image" href="assets/images/gallery/gallery-thumb-02.png">
-              <img src="assets/images/gallery/gallery-thumb-02.png" alt="Golden International gallery image 2" />
-            </a>
-          </div>
-          <div class="col-xl-4 col-lg-6">
-            <a class="gie-gallery-card popup-image" href="assets/images/gallery/gallery-thumb-03.png">
-              <img src="assets/images/gallery/gallery-thumb-03.png" alt="Golden International gallery image 3" />
-            </a>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <a class="gie-gallery-card popup-image" href="assets/images/gallery/gallery-thumb-04.png">
-              <img src="assets/images/gallery/gallery-thumb-04.png" alt="Golden International gallery image 4" />
-            </a>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <a class="gie-gallery-card popup-image" href="assets/images/gallery/gallery-thumb-05.png">
-              <img src="assets/images/gallery/gallery-thumb-05.png" alt="Golden International gallery image 5" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- gallery area end -->
 
     <!-- gallery approvals start -->
     <section class="gie-approvals-area section-space">
@@ -2452,97 +2140,88 @@
               </h3>
             </div>
           </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/dcrp.jpg" alt="DCRP" />
+
+          <div class="swiper gie-approvals-slider" data-speed="4000" data-delay="0" data-item="6" data-item-xl="5"
+            data-item-lg="4" data-item-md="3" data-item-sm="2">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/dcrp.png" alt="DCRP" />
+                  </div>
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">DCRP</h6>
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/jsrs-nama.png" alt="JSRS and NAMA" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/jsrs-nama.png" alt="JSRS and NAMA" />
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/mod.png" alt="Ministry of Defence" />
+                  </div>
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">JSRS &amp; NAMA</h6>
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/ooredoo.png" alt="Ooredoo" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/mod.jpg" alt="Ministry of Defence" />
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/rca.png" alt="Royal Court Affairs" />
+                  </div>
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">Ministry of Defence</h6>
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/oetc.png" alt="OETC" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/ooredoo.jpg" alt="Ooredoo" />
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/pdo.png" alt="PDO" />
+                  </div>
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">Ooredoo</h6>
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/oman-broadband.png" alt="Oman Broadband" />
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/rca.png" alt="Royal Court Affairs" />
+
+              <div class="swiper-slide">
+                <div class="gie-logo-card has-clip-path">
+                  <div class="gie-approval-thumb">
+                    <img src="assets/images/gie/logos/approvals/nama-dhofar.png" alt="NAMA Dhofar Services" />
+                  </div>
+                </div>
               </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">Royal Court Affairs</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/oetc.jpg" alt="OETC" />
-              </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">OETC</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/pdo.jpg" alt="PDO" />
-              </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">PDO</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/oman-broadband.jpg" alt="Oman Broadband" />
-              </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">Oman Broadband</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-2 col-lg-4 col-md-6">
-            <div class="gie-logo-card">
-              <div class="gie-approval-thumb">
-                <img src="assets/images/gie/logos/approvals/nama-dhofar.jpg" alt="NAMA Dhofar Services" />
-              </div>
-              <div class="rs-blog-content">
-                <h6 class="rs-blog-title has-black">NAMA Dhofar</h6>
-              </div>
+
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
     <!-- gallery approvals end -->
@@ -2853,7 +2532,7 @@
         <div class="rs-footer-item">
           <div class="rs-footer-widget footer-1-col-1">
             <div class="rs-footer-widget-logo">
-              <a href="index.html"><img src="assets/images/gie/gie-logo.png" alt="Golden International Est. LLC" /></a>
+              <a href="index.html"><img src="assets/images/logo/logo-white.png" alt="Golden International Est. LLC" /></a>
             </div>
             <div class="rs-footer-widget-content">
               <p class="rs-footer-widget-description">
@@ -2878,12 +2557,12 @@
             <div class="rs-footer-widget-content">
               <div class="rs-footer-widget-links">
                 <ul>
-                  <li><a href="#home">Home</a></li>
+                  <li><a href="/">Home</a></li>
                   <li><a href="#about">About Us</a></li>
                   <li><a href="#products">Products</a></li>
                   <li><a href="#dealers">Dealers &amp; Partners</a></li>
                   <li><a href="#clients">Clients</a></li>
-                  <li><a href="#contact">Contact Us</a></li>
+                  <li><a href="./contact.html">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -2898,7 +2577,7 @@
                 Available on request<br />Email: giemktg@gioman.com
               </p>
               <div class="rs-footer-btn">
-                <a href="#contact" class="rs-btn has-theme-orange has-icon has-bg">Get a Quote<span
+                <a href="./contact.html" class="rs-btn has-theme-orange has-icon has-bg">Get a Quote<span
                     class="icon-box"><svg class="icon-first" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
                       <path
                         d="M31.71,15.29l-10-10L20.29,6.71,28.59,15H0v2H28.59l-8.29,8.29,1.41,1.41,10-10A1,1,0,0,0,31.71,15.29Z">
@@ -2959,109 +2638,8 @@
   <script src="assets/js/plugins/nouislider.min.js"></script>
   <script src="assets/js/vendor/purecounter.js"></script>
   <script src="assets/js/vendor/odometer.min.js"></script>
+  <script src="assets/js/vendor/recaptcha.js"></script>
   <script src="assets/js/main.js"></script>
-  <script>
-    (function () {
-      var selectedProduct = "";
-      var productSelect = document.getElementById("product-select");
-      var subjectInput = document.getElementById("subject");
-      var messageInput = document.getElementById("message");
-      var form = document.getElementById("contact-form");
-      var formMessages = document.getElementById("form-messages");
-
-      function syncButtons() {
-        document
-          .querySelectorAll(".gie-add-product")
-          .forEach(function (button) {
-            var product = button.getAttribute("data-product");
-            var isAdded = selectedProduct === product;
-            button.classList.toggle("is-added", isAdded);
-            button.textContent = isAdded
-              ? "Selected for Enquiry"
-              : "Add to Enquiry";
-          });
-      }
-
-      document.addEventListener("click", function (event) {
-        var addButton = event.target.closest(".gie-add-product");
-
-        if (addButton) {
-          selectedProduct = addButton.getAttribute("data-product");
-          if (productSelect) {
-            productSelect.value = selectedProduct;
-          }
-          if (subjectInput && !subjectInput.value.trim()) {
-            subjectInput.value = "Product enquiry";
-          }
-          if (messageInput && !messageInput.value.trim()) {
-            messageInput.value =
-              "I am interested in this product category. Please share details, availability and quotation.";
-          }
-          syncButtons();
-          window.location.hash = "contact";
-        }
-      });
-
-      if (productSelect) {
-        productSelect.addEventListener("change", function () {
-          selectedProduct = productSelect.value;
-          syncButtons();
-        });
-      }
-
-      if (form) {
-        form.addEventListener("submit", function (event) {
-          if (form.getAttribute("data-local-enquiry") !== "true") {
-            return;
-          }
-
-          event.preventDefault();
-
-          var name = document.getElementById("name").value.trim();
-          var email = document.getElementById("email").value.trim();
-          var company = document.getElementById("company").value.trim();
-          var phone = document.getElementById("phone").value.trim();
-          var product = productSelect ? productSelect.value.trim() : "";
-          var subject = document.getElementById("subject").value.trim();
-          var message = document.getElementById("message").value.trim();
-
-          if (!name || !email || !product || !subject || !message) {
-            formMessages.className = "gie-form-alert error";
-            formMessages.textContent =
-              "Please fill in the required enquiry details before submitting.";
-            return;
-          }
-
-          var body = [
-            "Name: " + name,
-            "Company: " + (company || "Not provided"),
-            "Email: " + email,
-            "Phone: " + (phone || "Not provided"),
-            "Product Category: " + product,
-            "",
-            "Message:",
-            message,
-          ].join("\n");
-
-          formMessages.className = "gie-form-alert success";
-          formMessages.textContent =
-            "Enquiry prepared successfully with your selected product category.";
-
-          window.location.href =
-            "mailto:giemktg@gioman.com?subject=" +
-            encodeURIComponent(subject) +
-            "&body=" +
-            encodeURIComponent(body);
-
-          form.reset();
-          selectedProduct = "";
-          syncButtons();
-        });
-      }
-
-      syncButtons();
-    })();
-  </script>
 </body>
 
 </html>
